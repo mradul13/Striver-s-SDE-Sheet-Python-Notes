@@ -29,10 +29,10 @@ class Solution(object):
             carry = sum//10
             node = ListNode()
             node.val = sum%10
-            temp.next - node
+            temp.next = node
             temp = temp.next
         
         return dummy.next
     
     #Time Complexity: O(n+m)
-    #Space Complexity: O(n+m)
+    #Space Complexity: O(max(n,m)+1)
