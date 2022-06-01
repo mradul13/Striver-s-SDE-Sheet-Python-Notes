@@ -20,12 +20,12 @@ class Solution(object):
         temp = head
         for i in range(k):
             temp = head
-        while temp.next.next!=None:
-            temp = temp.next
-        end = temp.next
-        temp.next = None
-        end.next = head
-        head = end
+            while temp.next.next!=None:
+                temp = temp.next
+            end = temp.next
+            temp.next = None
+            end.next = head
+            head = end
         
         return head
     
