@@ -3,7 +3,7 @@
 #Brute force 
 #In this approach we can generate all permutation using recursion and store them in a list.
 #Then we find given array and print the one next to it.
-#We will look at this approac in recursion topic in SDE sheet.
+#We will look at this approach in recursion topic in SDE sheet.
 #Time Complexity = O(n!*n)
 #Space Complexity = O(1) + O(n!) (For stack)
 
@@ -24,7 +24,7 @@ class Solution(object):
         
         #If loop ends without peak then, just reverse the array
         if i ==0:
-            nums = nums.reverse()
+            nums.reverse()
         else:
             j = n-1
             var1 = i-1
