@@ -55,7 +55,7 @@ class Solution(object):
         mid = 0
         high = len(nums) - 1
         
-        while mid<high:
+        while mid<=high:
             if nums[mid]==0:
                 nums[low], nums[mid] = nums[mid], nums[low]
                 low += 1
