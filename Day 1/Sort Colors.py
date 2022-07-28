@@ -53,7 +53,7 @@ class Solution(object):
     def sortColors(self, nums):
         low = 0
         mid = 0
-        high = len(nums) = 1
+        high = len(nums) - 1
         
         while mid<high:
             if nums[mid]==0:
