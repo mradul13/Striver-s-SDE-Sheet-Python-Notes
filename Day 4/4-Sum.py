@@ -17,8 +17,10 @@ class Solution(object):
                 for k in range(j+1, n-1):
                     if target - nums[i]-nums[j]-nums[k] in nums[k+1:]:
                         temp = [nums[i], nums[j], nums[k], target-nums[i]-nums[j]-nums[k]]
-                        res.add(temp)
+                        res.add(tuple(temp))
         res = list(res)
+        for i in range(len(res)):
+            res[i] = list(res[i])
         return res
     
     #Time Complexity: O(n**3logn)+O(nlogn)
